@@ -1,7 +1,7 @@
 Rui Zhang is a final year Ph.D. student at Yale University advised by Professor Dragomir Radev.
-His research interest lies in various natural language processing problems in understanding, generation, and grounding that requires effective understanding of contexts.
+His research interest lies in various natural language processing problems in understanding, generation, and grounding that require effective understanding of contexts.
 He has been working on (1) End-to-End Neural Modeling for Entities, Sentences, Documents, and Multi-party Multi-turn Dialogues, (2) Text Summarization for Emails, News, and Scientific Articles, (3) Cross-lingual Information Retrieval for Low-Resource Languages, (4) Context-Dependent Text-to-SQL Semantic Parsing in Human-Computer Interaction.
 Rui Zhang has published papers and served as Program Committee members at top-tier NLP and AI conferences including ACL, NAACL, EMNLP, AAAI, CoNLL.
-He is also a Organization Committee members for the Interactive and Executable Semantic Parsing Workshop at EMNLP 2020.
+He is also an Organization Committee member for the Interactive and Executable Semantic Parsing Workshop at EMNLP 2020.
 During his Ph.D., He has done research internships at IBM Thomas J. Watson Research Center, Grammarly Research, and Google AI.
 He was a graduate student at the University of Michigan and got his bachelor degrees at both the University of Michigan and Shanghai Jiao Tong University from the UM-SJTU Joint Institute.
