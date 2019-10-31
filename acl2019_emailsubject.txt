@@ -1,0 +1,9 @@
+Given the overwhelming number of emails, an effective subject line becomes essential to better inform the recipient of the email’s content.
+In this project, we propose and study the task of email subject line generation: automatically generating an email subject line from the email body.
+We create the first dataset, Annotated Enron Subject Line Corpus (AESLC), for this task and find that email subject line generation favor extremely abstractive summary which differentiates it from news headline generation or news single document summarization.
+We also investigate the efficacy of several automatic metrics based on correlations with human judgments and propose a new automatic evaluation metric by building our own regression-based Email Subject Quality Estimator (ESQE).
+To generate effective email subjects, we propose a novel deep learning method that combines extractive and abstractive summarization using a two-stage process by Multi-Sentence Selection and Rewriting with Email Subject Quality Estimation Reward.
+For training the network, we use a multi-stage training strategy incorporating both supervised cross-entropy training and reinforcement learning (RL) by optimizing the reward provided by the ESQE model.
+Our system outperforms competitive baselines as well as recent state-of-the-art text summarization systems given both automatic and human evaluations.
+To our knowledge, this is the first work to tackle the problem of effective email subject line generation.
+This project is accomplished during a three-month internship at Grammarly and published as a long paper at ACL 2019.
