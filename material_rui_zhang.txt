@@ -1,0 +1,18 @@
+Starting in November 2017, I have been working with Kathleen McKeown and Douglas W. Oard on the MATERIAL project.
+The MATERIAL project aims to build a computer system that can process, translate and summarize documents from different languages such as Swahili, Tagalog, and Somali.
+Such an intelligent system will greatly improve the efficiency of information access for millions of people speaking different languages around the world.
+As a member of the Cross-lingual Information Retrieval (CLIR) team led by Douglas W. Oard, I am responsible for the system combination and cutoff selection which is critical to optimize the final CLIR evaluation metric.
+To be specific, I design a simple and effective solution based on the Sum-to-One score normalization to select the best systems from around 20 CLIR systems and combine their results.
+Based on the normalized score, I also execute a large number of experiments on datasets in four different languages to determine the number of documents to return for each query.
+In the last evaluation in October 2019, this technique of system combination and cutoff selection was incorporated in all submissions for our English-Lithuanian and English-Bulgarian CLIR systems over text and speech documents which helped achieve the best performance among three competitive teams.
+
+Furthermore, I also become motivated by the CLIR problem and start doing research in the area of NLP for low-resource languages. Especially, leading a team with two graduate and five undergraduate students at Yale, I propose a novel deep learning based model for low-resource CLIR.
+This project aims to boost low-resource cross-lingual document retrieval performance with deep bilingual query-document representations.
+The proposed method match queries and documents in both source and target languages with four components, each of which is implemented as a term interaction-based deep neural network with cross-lingual word embeddings as input.
+By including query likelihood scores as extra features, our model effectively learns to rerank the retrieved documents by using a small number of a few hundreds of relevance labels for low-resource language pairs.
+Furthermore, by aligning word embedding spaces for multiple languages, the model can be directly applied under a zero-shot transfer setting when no training data is available for another language pair.
+Experimental results on the MATERIAL dataset show that our model outperforms the competitive translation-based baselines on English-Swahili, English-Tagalog, and English-Somali cross-lingual information retrieval tasks.
+To our knowledge, this is the first work to apply neural network methods to Cross-lingual Information Retrieval in low-resource and zero-shot settings.
+This project is published at ACL 2019 titled Improving Low-Resource Cross-lingual Document Retrieval by Reranking with Deep Bilingual Representations.
+
+Finally, I also help with preparing the proposal for the Cross-Language Search and Summarization over Text and Speech Workshop at LREC 2020 and volunteer to serve as a Program Committee member. 
