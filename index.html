@@ -2,17 +2,22 @@
 <html>
 
 <head>
-    <title>Rui Zhang - Penn State University</title>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="" />
+    <title>Rui Zhang, Penn State University Computer Science</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <link rel="icon" href="images/psu_logo.png" />
+
     <link href='main_style.css' rel='stylesheet'>
 
     <link href='https://fonts.googleapis.com/css?family=Nunito:200,300,400,500,600,700,800,900,100italic,100,300italic,400italic,500italic,900italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600,700,800,900,100italic,100,300italic,400italic,500italic,900italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600,700,800,900,100italic,100,300italic,400italic,500italic,900italic,700italic' rel='stylesheet' type='text/css'>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -25,6 +30,7 @@
             vertical-align: middle;
             padding-bottom: 30px;
         }
+        /* ul, li { margin: 0; padding: 0; } */
     </style>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -39,8 +45,47 @@
 
 <body>
 
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="min-height: 50px; height: 50px; background-color:#002D62; color: white;">
+        <div class="container" style="padding-bottom:0px; margin-bottom:0px;">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Rui Zhang</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#news">News</a>
+                    </li>
+                    <li>
+                        <a href="#teaching">Teaching</a>
+                    </li>
+                    <li>
+                        <a href="#students">Students</a>
+                    </li>
+                    <li>
+                        <a href="#publications">Publications</a>
+                    </li>
+                    <li>
+                        <a href="cv_rui_zhang.pdf" target="_blank">CV</a>
+                    </li>
+                    <li>
+                        <a href="hiring.html" target="_blank">Join Us!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="topbar">
-        <div class="container" style="margin-top:50px">
+        <div class="container" style="margin-top:50px; margin-bottom:20px">
             <div>
 				<div class="row mt-0">
 					<br>
@@ -51,17 +96,13 @@
                     </div>
 
                     <div class="col-0 col-sm-0 col-md-9 col-lg-10 pl-3 pr-1 px-sm-4 pl-md-5 pt-1 pb-1 pb-sm-1 pt-sm-1 nameplate col-xl-6 offset-xl-0" align="left">
-                        <h2 class="hidden-xs-down"><span itemprop="name">Rui Zhang</span></h2>
+                        <h2 class="hidden-xs-down" style="color:#002D62;"><span itemprop="name">Rui Zhang</span></h2>
                         <p class="my-0"> Assistant Professor <br> 
-                                         Computer Science & Engineering Department at Penn State University <br>
-                                         Email: &nbsp;&nbsp; r.zhang __at__ psu.edu <br>
-                                         <a href="./cv_rui_zhang.pdf">[CV]</a>
-<!--                                          <a href="./research_statement_rui_zhang.pdf">[Research Statement]</a> -->
-                                         <a href="https://github.com/ryanzhumich">[Github]</a>
-                                         <a href="https://scholar.google.com/citations?user=8GCLiUwAAAAJ&hl=en">[Google Scholar]</a>
-                                         <a href="https://twitter.com/ruizhang_nlp">[Twitter]</a>
+                                         Computer Science and Engineering Department at Penn State University <br>
+                                         W329 Westgate Building, University Park, PA 16802 <br> 
+                                         Email: &nbsp;&nbsp; r.zhang __at__ psu.edu <br> <br>
+                                         <a href="https://twitter.com/ruizhang_nlp?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ruizhang_nlp</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                                          <br> <br>
-<!--                                          <font color="red"> I am on the academic job market this year (2019-2020). </font> -->
                         </p>
                     </div>
                 </div>
@@ -71,23 +112,32 @@
 
     <div class="container">
         <div class="row mb-3">
-            <h4><b> We are hiring! </b> Please check <a href="hiring.html"> the information for prospective students</a>.<h4>
-        <br>
-        <h2>Bio</h2>
-        Dr. Rui Zhang is an Assistant Professor in the Computer Science and Engineering Department of Penn State University. His research interest lies in various natural language processing problems of understanding, generation, and grounding that require effective understanding of contexts. His recent work focuses on interactive and executable semantic parsing, text summarization, cross-lingual information retrieval, and open-domain data-to-text generation. He frequently publishes and serves as Program Committee members in ACL, NAACL, EMNLP, AAAI. He received B.S. degrees from both Shanghai Jiao Tong University and the University of Michigan in 2015 and received his Ph.D. from Yale University in 2020 working with Dr. Dragomir Radev. During his Ph.D., he has done research internships at IBM Thomas J. Watson Research Center, Grammarly Research, and Google AI.
-        <br> <br>
-
-        </div>
-
-        <div class="row">
-          <hr>
+            <!-- <h4><b> We are hiring! </b> Please check <a href="hiring.html"> the information for prospective students</a>.<h4>
+        <br> -->
+        <!-- <h2>Bio</h2> -->
+        Dr. Rui Zhang is an Assistant Professor in the <a href="https://www.eecs.psu.edu/">Computer Science and Engineering Department of Penn State University </a> and a co-director of the <a href="https://www.nlplab.psu.edu/">PSU NLP Lab</a>. His research interest lies in Natural Language Processing, Machine Learning, and Artificial Intelligence. He has published more than 20 papers at leading NLP/ML/AI conferences. He co-organized the Interactive and Executable Semantic Parsing workshop at EMNLP 2020 and serves as Area Chair at NAACL 2021, EMNLP 2021, NLPCC 2021. He is one of the recipients of 2020 Amazon Research Awards. He received B.S. degrees from both Shanghai Jiao Tong University and the University of Michigan in 2015 and received his Ph.D. from Compuater Science Department at Yale University in 2020. During his Ph.D., he has done research internships at IBM Thomas J. Watson Research Center, Grammarly Research, and Google AI.
         </div>
 
         <div class="row mb-3">
-            <h2>News</h2>
-            <div class="row mb-3" style="height: 200px; overflow-y: scroll;">
+            <h2 style="color:#002D62;">Research Interests</h2>
+            I am broadly interested in Natural Language Processing, Machine Learning, and Artificial Intelligence, with special focus on
+            <ul>
+                <li>Semantic Parsing and Natural Language Interfaces</li>
+                <li>Text Generation and Summarization</li>
+                <li>Cross-Lingual Information Access</li>
+                <li>Efficient and Generalizable NLP Models</li>
+            </ul>
+        </div>
+
+        <!-- <div class="row">
+          <hr>
+        </div> -->
+
+        <div id='news' class="row mb-3" style="scroll-margin-top: 50px; margin-bottom: 20px;">
+            <h2 style="color:#002D62;">News</h2>
+            <div style="height: 300px; overflow-y: scroll;">
             <ul id="news">
-                <li>8/2021: Welcome Yusen, Nan, and Sarkar joining our lab!
+                <li>8/2021: Welcome Yusen, Nan, and Sarkar joining our lab!</li>
                 <li>5/2021: Two papers (1 long and 1 long Findings) are accepted at ACL 2021.</li>
                 <li>4/2021: Receive an <a href="https://www.amazon.science/research-awards/program-updates/2020-amazon-research-awards-recipients-announced">Amazon Research Award</a> to work on Conversational QA systems over Tables. Thanks Amazon!</li>
                 <li>3/2021: DART is accepted at NAACL 2021.</li>
@@ -103,43 +153,44 @@
             </div>
         </div>
 
-        <div class="row">
+        <!-- <div class="row">
           <hr>
+        </div> -->
+
+        <div id='teaching' class="row mb-3" style="scroll-margin-top: 50px; margin-bottom: 20px;">
+            <h2 style="color:#002D62;">Teaching</h2>
+            <a href="https://docs.google.com/document/d/1jEeCgLZvoOzo_1MoSEP0_yTth2ajpyu7xePskGNRJHc/edit?usp=sharing">CMPSC 448 Machine Learning</a>, Fall 2021.
+            <br>
+            <a href="https://docs.google.com/document/d/1AvaJsh_nMINnEPYS45qv88B9myClH0OgC1T67CEV978/edit?usp=sharing">CMPSC 442 Artificial Intelligence</a>, Spring 2021.
+            <br>
+            <a href="https://docs.google.com/document/d/1jEeCgLZvoOzo_1MoSEP0_yTth2ajpyu7xePskGNRJHc/edit?usp=sharing">CMPSC 448 Machine Learning</a>, Fall 2020.
         </div>
 
-        <div class="row mb-3">
-            <h2>Teaching</h2>
-            <ul id="teaching">
-                <li>CMPSC 448 Machine Learning, Fall 2020, Fall 2021.</li>
-                <li>CMPSC 442 Artificial Intelligence, Spring 2021.</li>
-            </ul>
-        </div>
-
-        <div class="row">
+        <!-- <div class="row">
           <hr>
-        </div>
+        </div> -->
 
-        <div class="row">
-            <h2>Students</h2>
+        <div id='students' class="row" style="scroll-margin-top: 50px; margin-bottom: 20px;">
+            <h2 style="color:#002D62;">Students</h2>
             I am fortunate to work with many talented students.
-            <ul id="students">
+            <ul>
                 <li>PhD: <a href="https://yuszh.com/"> Yusen Zhang </a>, Nan Zhang (co-advised with Dr. Prasenjit Mitra), Sarkar Das (co-advised with Dr. Rebecca Passonneau)
                 </li>
                 <li>Masters: Tianyang Zhao
                 </li>
                 <li>Undergraduate: Lulu Liu, Jason Wang, Jacob Cunningham, Renu Bandaru, Noah Gearhart
                 </li>
-                <li>Visiting/Internship: Zeyu Ma, Naihao Deng, Chang Shu, Xiangyu Dong
+                <li>Visiting/Internship: Haoran Zhang, Yilun Zhao, Yunxiang Li, Zeyu Ma, Naihao Deng, Chang Shu, Xiangyu Dong
                 </li>
             </ul>
         </div>
 
-        <div class="row">
+        <!-- <div class="row">
           <hr>
-        </div>
+        </div> -->
 
-        <div class="row mb-3">
-            <h2>Publications</h2>
+        <div id='publications' class="row mb-3" style="scroll-margin-top: 50px">
+            <h2 style="color:#002D62;">Publications <a href="https://scholar.google.com/citations?user=8GCLiUwAAAAJ&hl=en">[Google Scholar]</a></h2>
             <h4>Preprint</h4>
             <div class='paper_title'>
                 Structured in Space, Randomized in Time: Leveraging Dropout in RNNs for Efficient Training
@@ -406,8 +457,6 @@
                 <i>NAACL 2016.</i>&nbsp;&nbsp;
                 <span style="font-size: 15px"> <a href="https://www.aclweb.org/anthology/N/N16/N16-1177.pdf">[paper]</a></span>
             </div>
-
-
         </div>
     </div>
 
