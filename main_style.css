@@ -24,8 +24,14 @@ h2 {
 .row {
   line-height: 130%;
 }
-td {          /* for table */
-  line-height: 110%;
+
+/* Table spacing */
+table {
+  margin-bottom: 10px;
+}
+td {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 
