@@ -198,3 +198,7 @@ ul {
   background-color: #cce5ff;
   border-color: #b8daff;
 }
+
+a:hover { 
+  text-decoration:none;
+}
