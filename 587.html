@@ -1,0 +1,348 @@
+
+<html>
+<head>
+  <title>CSE 587 - Penn State University</title>
+  <link rel="stylesheet" type="text/css" href="courses.css"/>
+</head>
+
+<body>
+
+<h1 style="color:#002D62">CSE 587 Spring 2023: Deep Learning for Natural Language Processing</h1>
+
+
+
+<h2>Course Information</h2>
+Instructor
+    <ul>
+        <li><a href="https://ryanzhumich.github.io/">Rui Zhang</a></li>
+        <li>Office Hour: Wednesdays 4-6pm @ W329 Westgate Building and Zoom</li>
+    </ul>
+Lecture Time and Location
+    <ul>
+        <li>Mondays and Wednesdays 2:30pm - 3:45pm @ Walker Building 124</li>
+    </ul>
+TA
+    <ul>
+        <li>Rishabh Bhatt</li>
+        <li>Office Hour: Thursdays 12-2pm @ W300</li>
+    </ul>
+Course Syllabus
+    <ul>
+        <li>Detailed syllabus is avaialbe <a href="https://docs.google.com/document/d/1vurzuT5vF-d4MIbegKFWeVw50R-20OoCO7QUmJHSKM0/edit?usp=sharing">here</a>.</li>
+    </ul>
+    
+
+<h2>Course Goals and Objectives</h2>
+Students will gain necessary skills and experience to understand, design, implement, and test their own NLP models using neural networks through programming assignments and a final project.  After successfully completing this course, students will be able to:
+    <ol>
+        <li>Design, implement, and test NLP models based neural networks</li>
+        <li>Analyze and assess the performance of NLP models</li>
+        <li>Situate their research contributions with reference to the state-of-the-art</li>
+        <li>Present their results in an academic fashion including both research papers and oral presentations</li>
+    </ol>
+
+<h2>Prerequisites</h2>
+    Since this course centers on deep learning methodology for NLP, CMPSC 448 Machine Learning or CSE 582 Natural Language Processing is the prerequisite. This course also assumes programming skills in Python and knowledge in linear algebra, calculus, basic probability and statistics.
+
+<h2>Textbook</h2> 
+
+The following textbooks are recommended for reading beyond papers listed in the course schedule. All of them are publicly available!
+<ul> 
+    <li><a href="https://web.stanford.edu/~jurafsky/slp3/">Speech and Language Processing</a> by Dan Jurafsky and James H. Martin.</li>  
+    <li><a href="http://d2l.ai/">Dive into Deep Learning</a> by Aston Zhang, Zack C. Lipton, Mu Li, Alex J. Smola.</li>
+    <li><a href="https://github.com/jacobeisenstein/gt-nlp-class/blob/master/notes/eisenstein-nlp-notes.pdf">Natural Language Processing</a> by Jacob Eisenstein.</li>
+    <li><a href="https://nlp.stanford.edu/fsnlp/">Foundations of Statistical Natural Language Processing</a> by Chris Manning and Hinrich Schütze.</li>
+    <li><a href="http://www.cs.cmu.edu/~nasmith/LSP/">Linguistic Structure Prediction</a> by Noah A. Smith.</li>
+    <li><a href="http://noiselab.ucsd.edu/ECE228/Murphy_Machine_Learning.pdf">Machine Learning: A Probabilistic Perspective</a> by Kevin Murphy.</li>
+    <li><a href="http://www.morganclaypool.com/doi/abs/10.2200/S00493ED1V01Y201303HLT020">Linguistic Fundamentals for NLP</a> by Emily M. Bender.</li>
+</ul>
+
+
+<h2>Course Project</h2>
+
+Project Format. This project aims to conduct original and independent research over NLP-related topics. Students can choose from several possible approaches:
+<ol>
+<li>Invent a new and important task in NLP and create a dataset for it, e.g., <a href="https://arxiv.org/pdf/2211.05041.pdf">MACSum: Controllable Summarization with Mixed Attributes</a>.</li>
+<li>Create a new dataset for an existing NLP tasks, e.g., <a href="https://arxiv.org/pdf/1809.08887.pdf">Spider: A Large-Scale Human-Labeled Dataset for Complex and Cross-Domain Semantic Parsing and Text-to-SQL Task</a>.</li>
+<li>Pick an existing NLP task and dataset and try to get good results, e.g., <a href="https://arxiv.org/pdf/2109.07589.pdf">CONTaiNER: Few-Shot Named Entity Recognition via Contrastive Learning and check this awesome website Papers With Code: The latest in Machine Learning</a>.</li>
+<li>Try to pick a NLP problem and dive deep into it with comprehensive analysis, e.g., <a href="https://arxiv.org/pdf/2206.04615.pdf">Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models</a>.</li>
+</ol>
+
+No matter which approach you take, we will hold your project to a high standard. Excellent projects will result in published papers in top-tier NLP/AI/ML conferences or journals (e.g., ACL, NAACL, EMNLP, AAAI, ICLR, NeurIPS, ICML, TACL, ...).
+<br>
+<br>
+Group Policy. You can work on the course project in a group of 1-3 people. You are allowed to combine this project with your research projects or projects from other courses.
+<br>
+<br>
+Deliverables.
+<ol>
+    <li>Project Proposal. Write a 3-page proposal that outlines your plan including what problem or task you want to address, what dataset(s) you want to work on, what metrics you need to employ, what baselines you would like to compare with. You should also cite a few relevant prior papers. Please use <a href="https://www.overleaf.com/read/nqhjfcfjvxpq">this overleaf templatet</a>.</li>
+    <li>Final Report. Your final report should use our Latex template with at least 8-page plus references. Your report should begin with an abstract and introduction to clearly state the problem you want to solve and contributions you have made. It should also have a section on related work, a section on your methodology, a section on your experimental settings and results, and a section on conclusions. Please use <a href="https://www.overleaf.com/read/grpvkxgcdqdt">this overleaf template</a>.</li>
+    <li>Code and Data. Please submit your data and runnable code with a detailed instruction. </li>
+</ol>
+
+<h2>Paper Presentation and Paper Review</h2>
+In the second phase of this course, we will cover two paper presentations by students in one lecture.
+<ul>
+    <li>Please sign up for 1 paper presentation and 5 paper reviews by putting your names in [slot]. First come, first served. You have to review papers which are not presented on your presentation day.</li>
+    <li>Please submit your presentation slides and paper reviews in Canvas -> Assignment by the end of day before the class, i.e., 11:59pm Sunday for Monday's classes and 11:59pm Tuesday for Wednesday's classes.</li>
+    <li>Before your presentation, you are also required to meet me before the class: 1pm-2pm for Monday and 1pm-2pm for Wednesday.</li>
+    <li>Each presentation will be 35mins (e.g., 25mins + 10mins Q&A).</li>
+    <li>
+    Please follow the <a href="https://2021.aclweb.org/downloads/Review_Form.pdf">review form from ACL</a> for paper review Becoming a good reviewer takes efforts and practice. If you haven't review an NLP paper before, here are guidelines for review a paper provided by community.
+        <ul>
+            <li><a href="https://aclrollingreview.org/reviewertutorial">How to review for ACL Rolling Review</a></li>
+            <li><a href="https://aclrollingreview.org/reviewform">Review Form</a></li>
+        </ul>
+</li>
+</ul>
+
+
+
+
+<h2>Course Schedule</h2>
+  <table class="table">
+    <colgroup>
+      <col style="width:10%">
+      <col style="width:20%">
+      <col style="width:40%">
+      <col style="width:10%">
+      <col style="width:10%">
+    </colgroup>
+    <thead>
+    <tr style=" background-color: #fcf8e3">
+      <th>Date</th>
+      <th>Topic</th>
+      <th>Material</th>
+      <th>Event</th>
+      <th>Due</th>
+    </tr>
+    </thead>
+    <tbody>
+        
+    <tr>
+        <td colspan="5" style="text-align: center;">Part 1: Lectures by Instructor on NLP Foundations</td>
+    </tr>
+    <tr>
+      <td><b><font color="red">Week 1</font></b><br>Monday Jan 9</td>
+      <td>Introduction
+        <br>
+        [<a href="cse587/1_Introduction-to-NLP.pdf">slides</a>]
+      </td>
+      <td>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+  
+    <tr>
+      <td>Wednesday Jan 11</td>
+      <td>Text Classification and Language Modeling
+        <br>
+        [<a href="cse587/2_Text-Classification-and-Language-Modeling.pdf">slides</a>]
+      </td>
+      <td>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+        <td><b><font color="red">Week 2</font><br></b>Monday Jan 16</td>
+        <td>No Class</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+  
+    <tr>
+      <td>Wednesday Jan 18<br></td>
+      <td>Neural Networks and Backpropagation
+        <br>
+        [<a href="cse587/3_Neural-Networks-and-Backpropagation.pdf">slides</a>]
+      </td>
+      <td>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+  
+    <tr>
+      <td><b><font color="red">Week 3</font></b><br>Monday Jan 23</td>
+      <td>Neural Networks and Backpropagation
+        <br>
+        [<a href="cse587/3_Neural-Networks-and-Backpropagation.pdf">slides</a>]
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  
+    <tr>
+      <td>Wednesday Jan 25</td>
+      <td>Recurrent Neural Networks, Sequence-to-Sequence, and Attention
+        <br>
+        [<a href="cse587/4_RNNs-Sequence-to-Sequence-Attention.pdf">slides</a>]
+      </td>
+      <td>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+  
+    <tr>
+      <td><b><font color="red">Week 4</font></b><br>Monday Jan 30</td>
+      <td>Final Project
+        <br>
+        [<a href="cse587/Final-Project.pdf">slides</a>]
+      </td>
+      <td>
+      </td>
+      <td>Assignment 1 <b><font color="green">Out</font></b></td>
+      <td></td>
+    </tr>
+  
+    <tr>
+      <td>Wednesday Feb 1</td>
+      <td>Transformers
+        <br>
+        [<a href="cse587/5_Transformers.pdf">slides</a>]
+      </td>
+      <td>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+  
+    <tr>
+      <td><b><font color="red">Week 5</font></b><br>Tue Feb 7</td>
+      <td>Transformers
+        <br>
+        [<a href="cse587/5_Transformers.pdf">slides</a>]
+      </td>
+      <td>
+      </td>
+      <td></td>
+      <td>Project Group Registration <b><font color="red">Due</font></b></td>
+    </tr>
+  
+    <tr>
+      <td>Wednesday Feb 8</td>
+      <td>BERT and Pretraining
+        <br>
+        [<a href="cse587/6_BERT-and-Pretraining.pdf">slides</a>]
+      </td>
+      <td>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+  
+    <tr>
+      <td><b><font color="red">Week 6</font></b><br>Monday Feb 13</td>
+      <td>BERT and Pretraining
+        <br>
+        [<a href="cse587/6_BERT-and-Pretraining.pdf">slides</a>]
+      </td>
+      <td>
+      </td>
+      <td></td>
+      <td>Assignment 1 <b><font color="red">Due</font></b></td>
+    </tr>
+  
+    <tr>
+      <td>Wednesday Feb 15</td>
+      <td>Prompt-based Methods
+        <br>
+        [<a href="cse587/7_Prompt-based-Methods.pdf">slides</a>]
+      </td>
+      <td>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+  
+    <tr>
+      <td><b><font color="red">Week 7</font></b><br>Monday Feb 20</td>
+      <td>ChatGPT and Beyond<br>
+        [<a href="cse587/8_ChatGPT-and-Beyond.pdf">slides</a>]
+      </td>
+      <td>
+      </td>
+      <td></td>
+      <td>Project Proposal <b><font color="red">Due</font></b></td>
+    </tr>
+  
+    <tr>
+      <td>Wednesday Feb 22</td>
+      <td>ChatGPT and Beyond<br>
+        [<a href="cse587/8_ChatGPT-and-Beyond.pdf">slides</a>]
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  
+    <tr>
+        <td colspan="5" style="text-align: center;">Part 2: Presentations by Students on NLP Frontiers</td>
+    </tr>
+    <tr>
+      <td><b><font color="red">Week 8</font></b><br>Monday Feb 27</td>
+      <td>GPT-2 and GPT-3</td>
+      <td>
+        Paper Presentations
+        <ul>
+          <li><a href="https://arxiv.org/abs/2208.07339">LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale</a> <br> Presented by Songhe Wang [<a href="cse587/slides_Songhe_Wang.pdf">slides</a>]</li>
+          <li><a href="https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf">Language Models are Unsupervised Multitask Learners</a> <br> Presented by Mahsa Sheikhi [<a href="">slides</a>]</li>
+          <li><a href="https://arxiv.org/abs/2005.14165">Language Models are Few-Shot Learners</a> <br> Presented by Shu Zhao [<a href="cse587/slides_Shu_Zhao.pdf">slides</a>]</li>
+        </ul>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+        <td>Wednesday March 1</td>
+        <td>In-Context Learning</td>
+        <td>
+          Paper Presentations
+          <ul>
+            <li><a href="https://arxiv.org/abs/2202.12837">Rethinking the Role of Demonstrations: What Makes In-Context Learning Work?</a> <br> Presented by Renze Lou [<a href="">slides</a>]</li>
+            <li><a href="https://arxiv.org/abs/2104.08786">Fantastically Ordered Prompts and Where to Find Them: Overcoming Few-Shot Prompt Order Sensitivity</a> <br> Presented by Sarkar Snigdha Sarathi Das [<a href="">slides</a>]</li>
+          </ul>
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
+  
+    <tr>
+        <td><b><font color="red">Week 9</font></b><br>Monday March 6</td>
+        <td>Spring Break</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Wednesday March 8</td>
+        <td>Spring Break</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Friday May 5</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Project Report, Code, and Data <b><font color="red">Due</font></b></td>
+    </tr>
+
+    </tbody>
+  </table>
+</div>
+
+</body>
+
+</html>
