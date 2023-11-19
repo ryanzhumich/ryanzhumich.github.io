@@ -1,0 +1,478 @@
+
+<html>
+<head>
+  <title>CMPSC 442 - Penn State University</title>
+  <link rel="stylesheet" type="text/css" href="courses.css"/>
+</head>
+
+<body>
+
+<h1 style="color:#002D62">CMPSC 442 Spring 2024: Artificial Intelligence</h1>
+
+
+
+<h2>Course Information</h2>
+Instructor
+    <ul>
+        <li><a href="https://ryanzhumich.github.io/">Rui Zhang</a></li>
+        <li>Office Hour: Friday 4-6pm @ W329 Westgate Building and Zoom</li>
+    </ul>
+Lecture Time and Location
+    <ul>
+        <li>Tuesday and Thursday, 4:35PM - 5:50PM @ Thomas Bldg 104</li>
+    </ul>
+TA
+    <ul>
+        <li>Ryo Kamoi</li>
+        <li>Office Hour: Wednesday 12-2pm @ W300</li>
+    </ul>
+Course Syllabus
+    <ul>
+        <li>Detailed syllabus is avaialbe <a href="https://docs.google.com/document/d/11RO4_eZyarLeHyPkIt8ya5pwGBuDtNUWKGjbaZRVlwg/edit?usp=sharing">here</a>.</li>
+    </ul>
+    
+
+<h2>Course Goals and Objectives</h2>
+This course provides an overview of the foundations, problems, approaches, implementation, and applications of artificial intelligence. Topics covered include problem solving, goal-based and adversarial search, logical, probabilistic, and decision theoretic knowledge representation and inference, decision making, and learning. Through programming assignments that sample these topics, students acquire an understanding of what it means to build rational agents of different sorts as well as applications of AI techniques in language processing, planning, vision.
+
+The goal of this course is to learn
+    <ol>
+        <li>Basic techniques for building intelligent computer systems</li>
+        <ol>
+          <li>Search, (games,) constraint satisfaction, uncertainty and probability, Bayes Rule, Naïve Bayes, Hidden Markov Models</li>
+          <li>Introduction to fundamental concepts in machine learning: linear regression, linear regression classifier, perceptron learning rule</li>
+        </ol>
+        <li>In depth consideration of the role AI will play in our lives</li>
+    </ol>
+
+<h2>Prerequisites</h2>
+    Enforced Prerequisite at Enrollment: CMPSC 221. Enforced Concurrent at Enrollment: CMPSC 465. Students are expected to have a good understanding of probability, data structures, and programming. We will cover Python basics early in the semester. Students should feel comfortable programming, debugging, and testing in Python. 
+
+<h2>Textbook</h2> 
+<ul> 
+    <li><a href="">Artificial Intelligence: A Modern Approach, 3rd Edition</a> by Stuart Russell & Peter Norvig.</li> The sections on machine learning covered in the course are not in the 2nd Edition. Because this course is a prerequisite for machine learning, the 3rd Edition is recommended over the much cheaper 2nd Edition.
+    <li><a href="https://web.stanford.edu/~jurafsky/slp3/">Speech and Language Processing</a> by Dan Jurafsky and James H. Martin.</li>
+</ul>
+
+
+<h2>Programming Assignments</h2>
+
+There are 6 programming assignments. The programming assignments shall be done with Python 3.6+. Every programming assignment will be graded by an autograder. Do not submit with import errors or syntax errors. You must use the template *py files. Your code must produce a correct or partly correct answer to get full or partial credit.
+
+All submissions must be your own dependent work. Do not copy other people's code or misrepresent it as yours. We will use high grade plagiarism detection code.
+
+Late Policy for Programming Assignments. There is only 1 late day allowed with a penalty of 25% for EACH programming assignment. For example, if you obtain a raw score 90 on the first late day, you will get 90x75%= 67.5; if you submit two days after the deadline, the score is 0.
+
+<h2>Course Schedule</h2>
+  <table class="table">
+    <colgroup>
+      <col style="width:15%">
+      <col style="width:25%">
+      <col style="width:30%">
+      <col style="width:10%">
+      <col style="width:10%">
+    </colgroup>
+    <thead>
+    <tr style=" background-color: #fcf8e3">
+      <th>Date</th>
+      <th>Topic</th>
+      <th>Material / Reading</th>
+      <th>Event</th>
+      <th>Due</th>
+    </tr>
+    </thead>
+    <tbody>
+        
+    <!-- <tr>
+        <td colspan="5" style="text-align: center;">Part 1: Lectures by Rui on NLP Foundations</td>
+    </tr> -->
+    <tr>
+      <td><b><font color="red">Week 1</font></b><br>Tuesday Jan 9</td>
+      <td>Introduction
+        <br>
+        [<a href="">slides</a>]
+      </td>
+      <td>
+      </td>
+      <td>HW 1 <b><font color="green">Out</font></b></td>
+      <td></td>
+    </tr>
+  
+    <tr>
+      <td>Thursday Jan 11</td>
+      <td>Intelligent Agents
+        <br>
+        [<a href="">slides</a>]
+      </td>
+      <td>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+        <td><b><font color="red">Week 2</font><br></b>Tuesday Jan 16</td>
+        <td>Search
+          <br>
+          [<a href="">slides</a>]
+        </td>
+        <td></td>
+        <td>HW 2 <b><font color="green">Out</font></b></td>
+        <td>HW 1 <b><font color="red">Due</font></b></td>
+      </tr>
+  
+    <tr>
+      <td>Thursday Jan 18<br></td>
+      <td>Search
+        <br>
+        [<a href="">slides</a>]
+      </td>
+      <td>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+  
+    <tr>
+      <td><b><font color="red">Week 3</font></b><br>Tuesday Jan 23</td>
+      <td>Search
+        <br>
+        [<a href="">slides</a>]
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  
+    <tr>
+      <td>Thursday Jan 25</td>
+      <td>Game
+        <br>
+        [<a href="">slides</a>]
+      </td>
+      <td>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+  
+    <tr>
+      <td><b><font color="red">Week 4</font></b><br>Tuesday Jan 30</td>
+      <td>Game
+        <br>
+        [<a href="">slides</a>]
+      </td>
+      <td>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+  
+    <tr>
+      <td>Thursday Feb 1</td>
+      <td>Game
+        <br>
+        [<a href="">slides</a>]
+      </td>
+      <td>
+      </td>
+      <td>HW 3 <b><font color="green">Out</font></b></td>
+      <td>HW 2 <b><font color="red">Due</font></b></td>
+    </tr>
+  
+    <tr>
+      <td><b><font color="red">Week 5</font></b><br>Tue Feb 7</td>
+      <td>Constraint Satisfaction Problem
+        <br>
+        [<a href="">slides</a>]
+      </td>
+      <td>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+  
+    <tr>
+      <td>Thursday Feb 8</td>
+      <td>Constraint Satisfaction Problem
+        <br>
+        [<a href="">slides</a>]
+      </td>
+      <td>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+  
+    <tr>
+      <td><b><font color="red">Week 6</font></b><br>Tuesday Feb 13</td>
+      <td>Logic Agents
+        <br>
+        [<a href="">slides</a>]
+      </td>
+      <td>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+  
+    <tr>
+      <td>Thursday Feb 15</td>
+      <td>Logic Agents
+        <br>
+        [<a href="">slides</a>]
+      </td>
+      <td>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+  
+    <tr>
+      <td><b><font color="red">Week 7</font></b><br>Tuesday Feb 20</td>
+      <td>Logic Agents
+        <br>
+        [<a href="">slides</a>]
+      </td>
+      <td>
+      </td>
+      <td>HW 4 <b><font color="green">Out</font></b></td>
+      <td>HW 3 <b><font color="red">Due</font></b></td>
+    </tr>
+  
+    <tr>
+      <td>Thursday Feb 22</td>
+      <td>Probabilistic Agents
+        <br>
+        [<a href="">slides</a>]
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td><b><font color="red">Week 8</font></b><br>Tuesday Feb 27</td>
+      <td>Probabilistic Agents
+        <br>
+        [<a href="">slides</a>]
+      </td>
+      <td>
+        
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+        <td>Tuesday Feb 29</td>
+        <td>Probabilistic Agents
+          <br>
+          [<a href="">slides</a>]
+        </td>
+        <td>
+          
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
+  
+    <tr>
+        <td><b><font color="red">Week 9</font></b><br>Tuesday March 5</td>
+        <td>Spring Break</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Thursday March 7</td>
+        <td>Spring Break</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td><b><font color="red">Week 10</font></b><br>Tuesday March 12</td>
+        <td>Hidden Markov Models
+          <br>
+          [<a href="">slides</a>]
+        </td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Thursday March 14</td>
+        <td>Hidden Markov Models
+          <br>
+          [<a href="">slides</a>]
+        </td>
+        <td>
+        </td>
+        <td>HW 5 <b><font color="green">Out</font></b></td>
+        <td>HW 4 <b><font color="red">Due</font></b></td>
+    </tr>
+
+    <tr>
+        <td><b><font color="red">Week 11</font></b><br>Tuesday March 19</td>
+        <td>Hidden Markov Models
+          <br>
+          [<a href="">slides</a>]
+        </td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Thursday March 21</td>
+        <td>Markov Decision Processes
+          <br>
+          [<a href="">slides</a>]
+        </td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td><b><font color="red">Week 12</font></b><br>Tuesday March 26</td>
+        <td>Markov Decision Processes
+          <br>
+          [<a href="">slides</a>]
+        </td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Thursday March 28</td>
+        <td>Markov Decision Processes
+          <br>
+          [<a href="">slides</a>]
+        </td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td><b><font color="red">Week 13</font></b><br>Tuesday April 2</td>
+        <td>Machine Learning
+          <br>
+          [<a href="">slides</a>]
+        </td>
+        <td>
+        </td>
+        <td>HW 6 <b><font color="green">Out</font></b></td>
+        <td>HW 5 <b><font color="red">Due</font></b></td>
+    </tr>
+
+    <tr>
+        <td>Thursday April 4</td>
+        <td>Machine Learning
+          <br>
+          [<a href="">slides</a>]
+        </td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td><b><font color="red">Week 14</font></b><br>Tuesday April 9</td>
+        <td>Machine Learning
+          <br>
+          [<a href="">slides</a>]
+        </td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Thursday April 11</td>
+        <td>NLP, LLM, Generative AI
+          <br>
+          [<a href="">slides</a>]
+        </td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td><b><font color="red">Week 15</font></b><br>Tuesday April 16</td>
+        <td>NLP, LLM, Generative AI
+          <br>
+          [<a href="">slides</a>]
+        </td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Thursday April 18</td>
+        <td>NLP, LLM, Generative AI
+          <br>
+          [<a href="">slides</a>]
+        </td>
+        <td>
+        </td>
+        <td></td>
+        <td>HW 6 <b><font color="red">Due</font></b></td>
+    </tr>
+
+    <tr>
+        <td><b><font color="red">Week 16</font></b><br>Tuesday April 23</td>
+        <td>AI Ethics
+          <br>
+          [<a href="">slides</a>]
+        </td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Thursday April 25</td>
+        <td>AI Ethics
+          <br>
+          [<a href="">slides</a>]
+        </td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>TBD</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Final Exam <b><font color="red">Due</font></b></td>
+    </tr>
+
+    </tbody>
+  </table>
+</div>
+
+</body>
+
+</html>
