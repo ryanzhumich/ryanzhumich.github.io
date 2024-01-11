@@ -1,0 +1,582 @@
+
+<html>
+<head>
+  <title>CMPSC 448 - Penn State University</title>
+  <link rel="stylesheet" type="text/css" href="courses.css"/>
+</head>
+
+<body>
+
+<h1 style="color:#002D62">CMPSC 448 Spring 2022: Machine Learning</h1>
+
+
+
+<h2>Course Information</h2>
+Instructor
+    <ul>
+        <li><a href="https://ryanzhumich.github.io/">Rui Zhang</a></li>
+        <li>Office Hour: MWF 10 - 11am (i.e., between two classes, outside classrooms)</li>
+    </ul>
+Lecture Time and Location
+    <ul>
+        <li>Section 1:  MWF, 9:05-9:55 am @ Steidle Building 114</li>
+        <li>Section 2:  MWF, 11:15-12:05 pm @ Osmond Lab 101</li>
+    </ul>
+TA
+    <ul>
+        <li>Sarkar Snigdha Sarathi Das, Office Hour: 5-7pm Tuesdays</li>
+        <li>Ranran Haoran Zhang, Office Hour: 4-6pm Wednesdays</li>
+        <li>Yusen Zhang, Office Hour: 4-6pm Thursdays</li>
+    </ul>
+Course Syllabus
+    <ul>
+        <li>Detailed syllabus is avaialbe <a href="https://docs.google.com/document/d/1aRUI26x7TyS7E_SPgS1ADT23dGdlr-81YdvCSD-S1-8/edit?usp=sharing">here</a>.</li>
+    </ul>
+    
+
+<h2>Course Goals and Objectives</h2>
+The goal of this course is to introduce data analysis from the machine learning perspective, in particular how to design and evaluate data-driven solutions for real problems in different domains. Students will gain familiarity with the workings of common machine learning models and will learn how noise and bias in the data affect their results. The course assumes programming skills in Python and knowledge in linear algebra, calculus, basic probability and statistics.
+
+<h2>Prerequisites</h2>
+STAT 318 or STAT 414 and CMPSC 122 or prior programming experience. You are expected to have a good understanding of Linear Algebra, Multivariate Calculus, Probability and Statistics, and Programming Skills. We will cover some background material on these topics early in the lectures. However, it is not meant to replace these regular prerequisite courses. For programming skills, you are expected to feel comfortable processing and analyzing data in Python and be familiar with basic algorithmic design and analysis. 
+
+<h2>Textbook</h2> 
+<ul> 
+    <li><a href="https://www.microsoft.com/en-us/research/publication/pattern-recognition-machine-learning/">Pattern Recognition and Machine Learning</a> by Christopher Bishop.</li>
+    <li><a href="http://ciml.info/">A Course in Machine Learning</a> by Hal Daumé III.</li>
+    <li><a href="http://incompleteideas.net/book/the-book-2nd.html">Reinforcement Learning: An Introduction</a> by Sutton and Barto.</li>
+    <li><a href="https://mml-book.com">Mathematics For Machine Learning</a> by Marc Peter Deisenroth, A Aldo Faisal, and Cheng Soon Ong.</li>
+    <li><a href="">Machine Learning: A Probabilistic Perspective</a> by Kevin Murphy.</li>
+    <li><a href="https://web.stanford.edu/~hastie/ElemStatLearn/">Elements of Statistical Learning</a> by Hastie, Tibshirani, Friedman.</li>
+</ul>
+
+<h2>Course Schedule</h2>
+  <table class="table">
+    <colgroup>
+      <col style="width:15%">
+      <col style="width:25%">
+      <col style="width:30%">
+      <col style="width:10%">
+      <col style="width:10%">
+    </colgroup>
+    <thead>
+    <tr style=" background-color: #fcf8e3">
+      <th>Date</th>
+      <th>Topic</th>
+      <th>Material / Reading</th>
+      <th>Event</th>
+      <th>Due</th>
+    </tr>
+    </thead>
+    <tbody>
+        
+    <tr>
+        <td colspan="5" style="text-align: center;">Part 1: The Basics of Machine Learning and Background</td>
+    </tr>
+    <tr>
+      <td><b><font color="red">Week 1</font></b><br>Monday Aug 22</td>
+      <td>Introduction & Logistics
+        <br>
+        [<a href="https://docs.google.com/presentation/d/1OtEU2BZorh6Q4EQcD5fmqC_NNpnbKOHKaojKN9OCwkQ/edit?usp=sharing">slides</a>]
+      </td>
+      <td> CIML 1.1, 1.2, 1.4 </td>
+      <td></td>
+      <td></td>
+    </tr>
+  
+    <tr>
+      <td>Wednesday Aug 24</td>
+      <td>The Processes of Learning
+        <br>
+        [<a href="https://docs.google.com/presentation/d/1JKLmsp4WMRy-fEXQLwjPoP1rG7FhYnM5JUAJd46aElo/edit?usp=sharing">slides</a>]
+      </td>
+      <td> CIML 2 </td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>Friday Aug 26</td>
+      <td>The Processes of Learning
+        <br>
+        [<a href="https://docs.google.com/presentation/d/1JKLmsp4WMRy-fEXQLwjPoP1rG7FhYnM5JUAJd46aElo/edit?usp=sharing">slides</a>]
+      </td>
+      <td> CIML 2, 5.6, 5.9 </td>
+      <td> HW 1 <b><font color="green">Out</font></b></td>
+      <td></td>
+    </tr>
+
+    <tr>
+        <td><b><font color="red">Week 2</font><br></b>Monday Aug 29</td>
+        <td> Basic Convex Optimization
+          <br>
+          [<a href="https://docs.google.com/presentation/d/1rOyUG8l8spIb1TfKwic8tr9KnTyjkGmvMvPHFU-fZvE/edit?usp=sharing">slides</a>]
+        </td>
+        <td>MML 2, 3, 4, 5, 6, 7</td>
+        <td></td>
+        <td></td>
+      </tr>
+  
+    <tr>
+      <td>Wednesday Aug 31<br></td>
+      <td> Basic Convex Optimization
+        <br>
+        [<a href="https://docs.google.com/presentation/d/1rOyUG8l8spIb1TfKwic8tr9KnTyjkGmvMvPHFU-fZvE/edit?usp=sharing">slides</a>]
+      </td>
+      <td>MML 2, 3, 4, 5, 6, 7</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>Friday Sept 2<br></td>
+      <td>Basic Linear Algebra
+        <br>
+        [<a href="https://docs.google.com/presentation/d/1XkT_BJiKCyNNTWbK7lwBDvtlx3d30rNcQXDcvUvy2wA/edit?usp=sharing">slides</a>]
+      </td>
+      <td>MML 2, 3, 4, 5, 6, 7</td>
+      <td></td>
+      <td></td>
+    </tr>
+  
+    <tr>
+        <td colspan="5" style="text-align: center;">Part 2: Supervised Learning</td>
+    </tr>
+    <tr>
+      <td><b><font color="red">Week 3</font></b><br>Monday Sept 5</td>
+      <td>Labor Day - No Class</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  
+    <tr>
+      <td>Wednesday Sept 7</td>
+      <td>Linear Regression
+        <br>
+        [<a href="https://docs.google.com/presentation/d/10y7MsUvaQcuKU6io4vzUyM1z-J1yPhep-EUaoQavCSU/edit?usp=sharing">slides</a>]
+      </td>
+      <td>CIML 7.1, 7.2, 7.3, 7.4, 7.5, 7.6</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>Friday Sept 9</td>
+      <td>Linear Regression
+        <br>
+        [<a href="https://docs.google.com/presentation/d/10y7MsUvaQcuKU6io4vzUyM1z-J1yPhep-EUaoQavCSU/edit?usp=sharing">slides</a>]
+      </td>
+      <td>CIML 7.1, 7.2, 7.3, 7.4, 7.5, 7.6</td>
+      <td>HW 2 <b><font color="green">Out</font></b></td>
+      <td></td>
+    </tr>
+  
+    <tr>
+      <td><b><font color="red">Week 4</font></b><br>Monday Sept 12</td>
+      <td>Regularization for Linear Regression: Ridge and Lasso
+        <br>
+        [<a href="https://docs.google.com/presentation/d/1mVo44kKMqmeVmDeccYKcb6qHpSPYsqNr9XYYzSNvibg/edit?usp=sharing">slides</a>]
+      </td>
+      <td>CIML 7.1, 7.2, 7.3, 7.4, 7.5, 7.6</td>
+      <td></td>
+      <td>HW 1 <b><font color="red">Due</font></b></td>
+    </tr>
+  
+    <tr>
+      <td>Wednesday Sept 14</td>
+      <td>Nearest Neighbors
+        <br>
+        [<a href="https://docs.google.com/presentation/d/13PSQum3qUYJgiQS0L7l6RxfLZ8z9Uv0ArhVlqdT0bKg/edit?usp=sharing">slides</a>]
+      </td>
+      <td>CIML 3.1, 3.2, 3.3, 3.5</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>Friday Sept 16</td>
+      <td>Perceptron and Neural Networks
+        <br>
+        [<a href="https://docs.google.com/presentation/d/1tOspzuS74MfkygNqvOhTsOaprwYSZkll1jQIBmmnAv0/edit?usp=sharing">slides</a>]
+      </td>
+      <td>CIML 4.1, 4.2, 4.3, 4.4, 4.5, 4.7, 10.1</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td><b><font color="red">Week 5</font></b><br>Monday Sept 19</td>
+      <td>Logistic Regression
+        <br>
+        [<a href="https://docs.google.com/presentation/d/1_pCIgAATo7pTLLRzKA9ssmcqP1Crg-gWHa23wR6u6Ls/edit?usp=sharing">slides</a>]
+      </td>
+      <td>CIML 9.6</td>
+      <td></td>
+      <td></td>
+    </tr>
+  
+    <tr>
+      <td>Wednesday Sept 21</td>
+      <td>Logistic Regression
+        <br>
+        [<a href="https://docs.google.com/presentation/d/1_pCIgAATo7pTLLRzKA9ssmcqP1Crg-gWHa23wR6u6Ls/edit?usp=sharing">slides</a>]
+      </td>
+      <td>CIML 9.6</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>Friday Sept 23</td>
+      <td>Support Vector Machines
+        <br>
+        [<a href="https://docs.google.com/presentation/d/1GUxjdY6qF0Qg9NwM-sRYhnDufhGiptrYtWqXziJNGMY/edit?usp=sharing">slides</a>]
+      </td>
+      <td>CIML 7.7</td>
+      <td>HW 3 <b><font color="green">Out</font></b></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td><b><font color="red">Week 6</font></b><br>Monday Sept 26</td>
+      <td>Support Vector Machines
+        <br>
+        [<a href="https://docs.google.com/presentation/d/1GUxjdY6qF0Qg9NwM-sRYhnDufhGiptrYtWqXziJNGMY/edit?usp=sharing">slides</a>]
+      </td>
+      <td>CIML 7.7</td>
+      <td></td>
+      <td>HW 2 <b><font color="red">Due</font></b></td>
+    </tr>
+  
+    <tr>
+      <td>Wednesday Sept 28</td>
+      <td>Support Vector Machines
+        <br>
+        [<a href="https://docs.google.com/presentation/d/1GUxjdY6qF0Qg9NwM-sRYhnDufhGiptrYtWqXziJNGMY/edit?usp=sharing">slides</a>]
+      </td>
+      <td>CIML 7.7</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>Friday Sept 30</td>
+      <td>Decision Trees
+        <br>
+        [<a href="https://docs.google.com/presentation/d/1plEjGIp_adjc3EvZRORAtdDZaZrhnBJJcXf1L-O5YbQ/edit?usp=sharing">slides</a>]
+      </td>
+      <td>CIML 1.3</td>
+      <td></td>
+      <td></td>
+    </tr>
+  
+    <tr>
+      <td><b><font color="red">Week 7</font></b><br>Monday Oct 3</td>
+      <td>Ensemble: Bagging and Boosting
+        <br>
+        [<a href="https://docs.google.com/presentation/d/1poOucrWpeqmWKczcc1UuHNtaNYw2AT9UGgUuDaVe0zU/edit?usp=sharing">slides</a>]
+      </td>
+      <td>CIML 13</td>
+      <td></td>
+      <td></td>
+    </tr>
+  
+    <tr>
+      <td>Wednesday Oct 5</td>
+      <td>Ensemble: Bagging and Boosting
+        <br>
+        [<a href="https://docs.google.com/presentation/d/1poOucrWpeqmWKczcc1UuHNtaNYw2AT9UGgUuDaVe0zU/edit?usp=sharing">slides</a>]
+      </td>
+      <td>CIML 13</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>Friday Oct 7</td>
+      <td>Ensemble: Bagging and Boosting
+        <br>
+        [<a href="https://docs.google.com/presentation/d/1poOucrWpeqmWKczcc1UuHNtaNYw2AT9UGgUuDaVe0zU/edit?usp=sharing">slides</a>]
+      </td>
+      <td>CIML 13</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td><b><font color="red">Week 8</font></b><br>Monday Oct 10</td>
+      <td>Midterm
+      </td>
+      <td></td>
+      <td></td>
+      <td>HW 3 <b><font color="red">Due</font></b></td>
+    </tr>
+  
+    <tr>
+        <td colspan="5" style="text-align: center;">Part 3: Unsupervised Learning</td>
+    </tr>
+    <tr>
+        <td><b><font color="red">Week 9</font></b><br>Monday Oct 17</td>
+        <td>Clustering
+          <br>
+          [<a href="https://docs.google.com/presentation/d/1I820dOsgBRN0FG6bxaZ6R6boOJh_x2mVxq-dtohwdlY/edit?usp=sharing">slides</a>]
+        </td>
+        <td>CIML 3.4, 15.1, 16.1, 16.2, 16.3</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Wednesday Oct 19</td>
+        <td>Clustering
+          <br>
+          [<a href="https://docs.google.com/presentation/d/1I820dOsgBRN0FG6bxaZ6R6boOJh_x2mVxq-dtohwdlY/edit?usp=sharing">slides</a>]
+        </td>
+        <td>CIML 3.4, 15.1, 16.1, 16.2, 16.3</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Friday Oct 21</td>
+        <td>Expectation–Maximization
+          <br>
+          [<a href="https://docs.google.com/presentation/d/1I820dOsgBRN0FG6bxaZ6R6boOJh_x2mVxq-dtohwdlY/edit?usp=sharing">slides</a>]
+        </td>
+        <td>CIML 3.4, 15.1, 16.1, 16.2, 16.3</td>
+        <td>HW 4 <b><font color="green">Out</font></b></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td><b><font color="red">Week 10</font></b><br>Monday Oct 24</td>
+        <td>Principal Component Analysis
+          <br>
+          [<a href="https://docs.google.com/presentation/d/1EexQvhufT5jhgABBsCDAizS3qbJK7PjyA6d2tTEjrWA/edit?usp=sharing">slides</a>]
+        </td>
+        <td>CIML 15.2</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Wednesday Oct 26</td>
+        <td>Principal Component Analysis
+          <br>
+          [<a href="https://docs.google.com/presentation/d/1EexQvhufT5jhgABBsCDAizS3qbJK7PjyA6d2tTEjrWA/edit?usp=sharing">slides</a>]
+        </td>
+        <td>CIML 15.2</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Friday Oct 28</td>
+        <td>Principal Component Analysis
+          <br>
+          [<a href="https://docs.google.com/presentation/d/1EexQvhufT5jhgABBsCDAizS3qbJK7PjyA6d2tTEjrWA/edit?usp=sharing">slides</a>]
+        </td>
+        <td>CIML 15.2</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td><b><font color="red">Week 11</font></b><br>Monday Oct 31</td>
+        <td>Matrix Factorization
+          <br>
+          [<a href="https://docs.google.com/presentation/d/18ry5j2VnZ3lVl0f2f983OiDoRyAWHP9QQe1xqm8JNqk/edit?usp=sharing">slides</a>]
+        </td>
+        <td><a href="https://datajobs.com/data-science-repo/Recommender-Systems-[Netflix].pdf">Koren et al., 2009</a></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Wednesday Nov 2</td>
+        <td>Matrix Factorization
+          <br>
+          [<a href="https://docs.google.com/presentation/d/18ry5j2VnZ3lVl0f2f983OiDoRyAWHP9QQe1xqm8JNqk/edit?usp=sharing">slides</a>]
+        </td>
+        <td><a href="https://datajobs.com/data-science-repo/Recommender-Systems-[Netflix].pdf">Koren et al., 2009</a></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Friday Nov 4</td>
+        <td>Matrix Factorization
+          <br>
+          [<a href="https://docs.google.com/presentation/d/18ry5j2VnZ3lVl0f2f983OiDoRyAWHP9QQe1xqm8JNqk/edit?usp=sharing">slides</a>]
+        </td>
+        <td><a href="https://datajobs.com/data-science-repo/Recommender-Systems-[Netflix].pdf">Koren et al., 2009</a></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td colspan="5" style="text-align: center;">Part 4: Reinforcement Learning</td>
+    </tr>
+
+    <tr>
+        <td><b><font color="red">Week 12</font></b><br>Monday Nov 7</td>
+        <td>Bandits
+          <br>
+          [<a href="https://docs.google.com/presentation/d/1a6eitD6_6KJE7_XRgNOqbhGWamm3gFsRuf6JNSAwPnM/edit?usp=sharing">slides</a>]
+        </td>
+        <td>RLAI 2</td>
+        <td></td>
+        <td>HW 4 <b><font color="red">Due</font></b></td>
+    </tr>
+
+    <tr>
+        <td>Wednesday Nov 9</td>
+        <td>Bandits
+          <br>
+          [<a href="https://docs.google.com/presentation/d/1a6eitD6_6KJE7_XRgNOqbhGWamm3gFsRuf6JNSAwPnM/edit?usp=sharing">slides</a>]
+        </td>
+        <td>RLAI 2</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Friday Nov 11</td>
+        <td>Markov Decision Processes
+          <br>
+          [<a href="https://docs.google.com/presentation/d/1fgcnQq1apVyEjdte3aKCy0qBvs_I9cLPzTd9DU_Swp8/edit?usp=sharing">slides</a>]
+        </td>
+        <td>RLAI 3</td>
+        <td>HW 5 <b><font color="green">Out</font></b></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td><b><font color="red">Week 13</font></b><br>Monday Nov 14</td>
+        <td>Markov Decision Processes
+          <br>
+          [<a href="https://docs.google.com/presentation/d/1fgcnQq1apVyEjdte3aKCy0qBvs_I9cLPzTd9DU_Swp8/edit?usp=sharing">slides</a>]
+        </td>
+        <td>RLAI 3</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Wednesday Nov 16</td>
+        <td>Dynamic Programming for MDP
+          <br>
+          [<a href="https://docs.google.com/presentation/d/1Kr8WcQY7rLu4bbiDJy-9D0i9yq-z6319bPegOzwGPPI/edit?usp=sharing">slides</a>]
+        </td>
+        <td>RLAI 4</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Friday Nov 18</td>
+        <td>Dynamic Programming for MDP
+          <br>
+          [<a href="https://docs.google.com/presentation/d/1Kr8WcQY7rLu4bbiDJy-9D0i9yq-z6319bPegOzwGPPI/edit?usp=sharing">slides</a>]
+        </td>
+        <td>RLAI 4</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td><b><font color="red">Week 14</font></b><br></td>
+        <td>Thanksgiving - No Class</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td><b><font color="red">Week 15</font></b><br>Monday Nov 28</td>
+        <td>Monte Carlo for MDP
+          <br>
+          [<a href="https://docs.google.com/presentation/d/1LUgpuv-cHeZcTOP7iNxbV0kLlmaJanre09btx2W9oLI/edit?usp=sharing">slides</a>]
+        </td>
+        <td>RLAI 5, 6</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Wednesday Nov 30</td>
+        <td>Temporal Difference
+          <br>
+          [<a href="https://docs.google.com/presentation/d/1LUgpuv-cHeZcTOP7iNxbV0kLlmaJanre09btx2W9oLI/edit?usp=sharing">slides</a>]
+        </td>
+        <td>RLAI 5, 6</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Friday Dec 2</td>
+        <td>Temporal Difference
+          <br>
+          [<a href="https://docs.google.com/presentation/d/1LUgpuv-cHeZcTOP7iNxbV0kLlmaJanre09btx2W9oLI/edit?usp=sharing">slides</a>]
+        </td>
+        <td>RLAI 5, 6</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td colspan="5" style="text-align: center;">Part 5: Advanced Topics</td>
+    </tr>
+    <tr>
+        <td><b><font color="red">Week 16</font></b><br>Monday Dec 5</td>
+        <td>
+          <br>
+          [<a href="">slides</a>]
+        </td>
+        <td>
+        </td>
+        <td></td>
+        <td>HW 5 <b><font color="red">Due</font></b></td>
+    </tr>
+
+    <tr>
+        <td>Wednesday Dec 7</td>
+        <td>
+          <br>
+          [<a href="">slides</a>]
+        </td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Friday Dec 9</td>
+        <td>
+          <br>
+          [<a href="">slides</a>]
+        </td>
+        <td>
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>TBD</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Final Exam <b><font color="red">Due</font></b></td>
+    </tr>
+
+    </tbody>
+  </table>
+</div>
+
+</body>
+
+</html>
